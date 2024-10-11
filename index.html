@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopcart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="body-container">
+        <header>
+            <div class="topbar">
+                    <div class="call-btn">
+                        <a href="tel:+2349028741416" class="btn-contact"><i class="fas fa-phone"></i>+234 902 874 1416</a>
+                    </div>
+                    <div class="deal">
+                        <p>Get 50% Off on Selected Items  |  Shop Now</p>
+                    </div>
+                    <div class="topbar-control">
+                        <p>Eng <i class="fas fa-angle-down"></i></p>
+                        <p>Location <i class="fas fa-angle-down"></i></p>
+                    </div>
+            </div>
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="nav-left">
+    
+                    <div class="navlogo">
+                        <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>Shopcart</a>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#Categories.html" class="nav-link">Categories <i class="fas fa-angle-down"></i></a></li>
+                        <li class="nav-item"><a href="#Deals" class="nav-link">Deals</a></li>
+                        <li class="nav-item"><a href="#What's-New" class="nav-link">What's New</a></li>
+                        <li class="nav-item"><a href="#Delivery" class="nav-link">Delivery</a></li>
+                      </ul>
+                </div>
+                  <div class="nav-right">
+                      <form class="search-bar">
+                        <input type="text" name="Search" placeholder="Search...">
+                     </form>
+                     <div class="account">
+                        <a href="#" target="_blank"><i class="fas fa-user"></i> Account</a>
+                     </div>
+                     <div class="cart">
+                        <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                          </svg>
+                          <span>0</span>  
+                     </div>
+                  </div>
+            </nav>
+        </header>
+        <div class="hero">
+            <div class="bg-image">
+                <img src="assets/shopping-bags.jpg" alt="image">
+                <div class="contents">
+                    <h2>Shopping And <br>Department Store.</h2>
+                    <p>Shopping is a bit of a hobby for me. which <br> is sometimes troubling for the bank balance.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="catergories-heading">
+                <h3>Shop Our Top Categories</h3>
+            </div>
+            <div class="product-container">
+                <div class="product">
+                    <div class="product-title">
+                        <h3>Furniture</h3>
+                    </div>
+                    <a href="#" target="_blank">
+                        <img src="assets/furniture.jpg" alt="Furniture">
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-title">
+                        <h3>Hand Bag</h3>
+                    </div>
+                    <a href="#" target="_blank">
+                        <img src="assets/hand-bag.jpg" alt="hand-bag">
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-title">
+                        <h3>Books</h3>
+                    </div>
+                    <a href="#" target="_blank">
+                        <img src="assets/books.jpg" alt="books">
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-title">
+                        <h3>Tech</h3>
+                    </div>
+                    <a href="#" target="_blank">
+                        <img src="assets/laptop.jpg" alt="laptop">
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-title">
+                        <h3>Sneakers</h3>
+                    </div>
+                    <a href="#" target="_blank">
+                        <img src="assets/sneakers.jpg" alt="sneakers">
+                    </a>
+                </div>
+                <div class="product">
+                    <div class="product-title">
+                        <h3>Travel</h3>
+                    </div>
+                    <a href="#" target="_blank">
+                        <img src="assets/travel.jpg" alt="Travel">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flashSale">
+            <div class="flashSale-topBar">
+                <h2><i class="fa-solid fa-tag"></i>Flash Sale</h2>
+                <div class="timer">
+                    <h2 id="countdown">Time Left: 3d : 12h : 43m : 21s</h2>
+                </div>
+                <a href="#">
+                    <h2>SEE ALL <i class="fas fa-angle-right"></i></h2>
+                </a>
+            </div>
+            <div class="listProduct">
+                <div class="item">
+                    <img src="assets/airfryer.jpg" alt="">
+                    <h2>NAME PRODUCT</h2>
+                    <div class="price">$200</div>
+                    <button class="addCart">
+                        Add To Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="item">
+                <div class="image">
+                    <img src="assets/airfryer.jpg" alt="">
+                </div>
+                <div class="name">
+                    NAME
+                </div>
+                <div class="totalPrice">
+                    $200
+                </div>
+                <div class="quantity">
+                    <span class="minus"><</span>
+                    <span>1</span>
+                    <span class="plus">></span>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">CHECK  OUT</button>
+        </div>
+    </div>
+    <script src="shorpcart.js"></script>
+</body>
+</html>

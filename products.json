@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "5L AIRFRYER",
+        "price": 200,
+        "image": "assets/airfryer.jpg"
+    },
+    {
+        "id": 2,
+        "name": "STARLINK STANDARD KIT",
+        "price": 599,
+        "image": "assets/starlink.jpg"
+    },
+    {
+        "id": 3,
+        "name": "ACE ALEC 2000Mah Powerbank",
+        "price": 50,
+        "image": "assets/powerbank.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Sofa Throw Pillow",
+        "price": 35,
+        "image": "assets/pillow.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Samsung Galaxy A24",
+        "price": 290,
+        "image": "assets/phone.jpg"
+    },
+    {
+        "id": 6,
+        "name": "ECOFLOW DELTA2",
+        "price": 956,
+        "image": "assets/ecoflow.jpg"
+    },
+    {
+        "id": 7,
+        "name": "itel 32 Inches LED TV",
+        "price": 89,
+        "image": "assets/television.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Modern Mini Chandelier",
+        "price": 20,
+        "image": "assets/chandelier.jpg"
+    }
+]

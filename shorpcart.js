@@ -147,7 +147,7 @@ initApp();
 
 // timer javascript
 // Set the date we're counting down to
-const targetDate = new Date("Oct 15, 2024 12:00:00").getTime();
+const targetDate = new Date("Oct 30, 2024 12:00:00").getTime();
 
 // Update the countdown every second
 const countdown = setInterval(function() {

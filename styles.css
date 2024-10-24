@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ body {
     font-family: serif sans-serif;
 }
 .body-container {
-    max-width: 90vw;
+    padding: 0 50px;
     margin: auto;
     transition: transform .5s;
 }
@@ -23,7 +24,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .topbar-control {
     display: flex;
@@ -32,6 +32,7 @@ body {
 .topbar-control .fas {
     margin-left: 5px;
 }
+
 .call-btn a {
     color: white;
     text-decoration: none;
@@ -39,6 +40,73 @@ body {
 .call-btn .fas {
     margin-right: 10px;
 }
+
+/* sidebar styling  */
+.sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        width: 300px;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(20px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+}
+.sidebar-navlogo {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Lobster", sans-serif;
+    /* margin: auto; */
+    padding: 20px;
+    display: inline-block;
+    background: linear-gradient(90deg, #ff0000, #003d28, #ff0000);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-flash 3s ease infinite; 
+}
+.sidebar-navlogo a {
+    text-decoration: none;
+    background: inherit; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    display: inline-flex;
+    align-items: center;
+}
+.sidebar-navlogo .fas {
+    margin-right: 10px;
+    font-size: 35px; 
+    background: inherit; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.sidebar-nav-item a {
+    text-decoration: none;
+    color: #003d28;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: left;
+}
+.sidebar-nav-item a:hover {
+    border: 1px solid #db4437;
+}
+
+
+
 .navbar {
     display: flex;
     justify-content: space-evenly;
@@ -59,7 +127,9 @@ body {
     width: 30%;
     gap: 60px;
 }
-
+.hamburger-menu {
+   font-size: 18px; 
+}
 .cart {
     /* display: flex; */
     /* align-items: flex-end; */
@@ -96,18 +166,47 @@ body {
     color: red;
 }
 .navlogo {
-    color: #003d28;
     font-size: 35px;
     font-weight: 600;
+    font-family: "Lobster", sans-serif;
     margin-right: auto;
+    display: inline-block;
+    background: linear-gradient(90deg, #ff0000, #003d28, #ff0000);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient-flash 3s ease infinite; 
+    max-width: 200px;
 }
+
 .navlogo a {
     text-decoration: none;
+    background: inherit; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    display: inline-flex;
+    align-items: center;
 }
+
 .navlogo .fas {
     margin-right: 10px;
-    color: red;
+    font-size: 35px; 
+    background: inherit; 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
+@keyframes gradient-flash {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -419,4 +518,173 @@ body.showCart .body-container {
 }
 .listCart::-webkit-scrollbar {
     width: 0;
+}
+
+/* login page */
+.sign-in, .get-started {
+    text-decoration: none;
+    color: #003d28;
+    font-size: 18px;
+    font-weight: 700;
+}
+.access {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.get-started {
+    padding: 8px 12px;
+    background-color: #ff0000;
+    border-radius: 20px;
+}
+.login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.login-container {
+    text-align: center;
+    height: auto;
+    width: 90vw;
+    /* max-width: 600px; */
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+}
+
+.login-title {
+    font-size: 68px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+
+.subtitle {
+    font-size: 24px;
+    color: #003d28;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    /* border: 1px solid red; */
+}
+
+.login-fields, .social-login {
+    width: 45%;
+}
+
+.login-input {
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.divider {
+    font-size: 30px;
+    color: #666;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+
+.social-btn {
+    width: 60%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+}
+
+.social-btn i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.google-icon {
+    color: #db4437;
+}
+
+.facebook-icon {
+    color: #1877f2;
+}
+
+.apple-icon {
+    color: #000;
+}
+
+.login-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 60%;
+   
+}
+
+.login-btn .arrow {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.forgot-passcode {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #003d28;
+}
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .body-container {
+        padding: 0;
+    }
+    .topbar {
+        width: 100vw;
+    }
+    .hideOnMobile {
+        display: none;
+    }
+    .cart {
+      margin-right: 30px;
+    }
+    .nav-right {
+        gap: 20px;
+    }
+    .sign-in {
+        display: flex;
+    }
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .listProduct {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 }

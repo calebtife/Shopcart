@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopcart</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/books.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
     <div class="body-container">
@@ -21,26 +23,42 @@
                         <p>Location <i class="fas fa-angle-down"></i></p>
                     </div>
             </div>
+            <!-- sidebar -->
+              <div class="sidebar">
+                <div class="sidebar-navlogo">
+                    <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>ShopKart</a>
+                </div>
+                <ul class="sidebar-nav-list ">
+                    <li class="sidebar-nav-item" style="font-size: 24px; color: red;"><box-icon name='x' onclick=hideSidebar()></box-icon></li>
+                    <li class="sidebar-nav-item"><a href="#Categories.html" class="nav-link">Categories <i class="fas fa-angle-down"></i></a></li>
+                    <li class="sidebar-nav-item"><a href="#Deals" class="nav-link">Deals</a></li>
+                    <li class="sidebar-nav-item"><a href="#What's-New" class="nav-link">What's New</a></li>
+                    <li class="sidebar-nav-item"><a href="#Delivery" class="nav-link">Delivery</a></li>
+                </ul>
+                <form class="sidebar-search-bar">
+                    <input type="text" name="Search" placeholder="Search...">
+                </form>
+              </div>
             <!-- navbar -->
             <nav class="navbar">
                 <div class="nav-left">
     
                     <div class="navlogo">
-                        <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>Shopcart</a>
+                        <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>ShopKart</a>
                     </div>
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="#Categories.html" class="nav-link">Categories <i class="fas fa-angle-down"></i></a></li>
-                        <li class="nav-item"><a href="#Deals" class="nav-link">Deals</a></li>
-                        <li class="nav-item"><a href="#What's-New" class="nav-link">What's New</a></li>
-                        <li class="nav-item"><a href="#Delivery" class="nav-link">Delivery</a></li>
-                      </ul>
+                    <ul class="nav-list ">
+                        <li class="nav-item"><a href="#Categories.html" class="nav-link hideOnMobile">Categories <i class="fas fa-angle-down"></i></a></li>
+                        <li class="nav-item"><a href="#Deals" class="nav-link hideOnMobile">Deals</a></li>
+                        <li class="nav-item"><a href="#What's-New" class="nav-link hideOnMobile">What's New</a></li>
+                        <li class="nav-item"><a href="#Delivery" class="nav-link hideOnMobile">Delivery</a></li>
+                    </ul>
                 </div>
                   <div class="nav-right">
-                      <form class="search-bar">
+                      <form class="search-bar hideOnMobile">
                         <input type="text" name="Search" placeholder="Search...">
                      </form>
                      <div class="account">
-                        <a href="#" target="_blank"><i class="fas fa-user"></i> Account</a>
+                        <a href="account.html" target="_blank"><i class="fas fa-user"></i> Account</a>
                      </div>
                      <div class="cart">
                         <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
@@ -49,8 +67,11 @@
                           <span>0</span>  
                      </div>
                   </div>
+                  <box-icon name='menu' class="hamburger-menu" onclick=showSidebar()></box-icon>
             </nav>
         </header>
+        
+
         <div class="hero">
             <div class="bg-image">
                 <img src="assets/shopping-bags.jpg" alt="image">
@@ -164,6 +185,17 @@
             <button class="checkOut">CHECK  OUT</button>
         </div>
     </div>
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
     <script src="shorpcart.js"></script>
 </body>
 </html>

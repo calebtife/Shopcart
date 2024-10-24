@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="topbar">
+                <div class="call-btn">
+                    <a href="tel:+2349028741416" class="btn-contact"><i class="fas fa-phone"></i>+234 902 874 1416</a>
+                </div>
+                <div class="deal">
+                    <p>Get 50% Off on Selected Items  |  Shop Now</p>
+                </div>
+                <div class="topbar-control">
+                    <p>Eng <i class="fas fa-angle-down"></i></p>
+                    <p>Location <i class="fas fa-angle-down"></i></p>
+                </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+
+                <div class="navlogo">
+                    <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>ShopKart</a>
+                </div>
+            </div>
+              <div class="nav-right">
+                 
+                 <div class="access">
+                    <a href="account.html" class="sign-in">Sign In</a>
+                    <a href="#" class="get-started">Get Started</a>
+                 </div>
+                 <div class="account hideOnMobile">
+                    <a href="account.html" target="_blank"><i class="fas fa-user"></i> Account</a>
+                 </div>
+                 <div class="cart">
+                    <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                      </svg>
+                      <span>0</span>  
+                 </div>
+              </div>
+        </nav>
+    </header>
+    <div class="login-content">
+        <div class="login-container">
+            <h1 class="login-title">Login to Your <br>Account</h1>
+            <p class="subtitle">Amazing products, even more amazing prices!</p>
+    
+            <div class="login-form">
+                <!-- Login Fields -->
+                <div class="login-fields">
+                    <input  placeholder="Phone / Email " class="login-input">
+                    <input type="password" placeholder="Passcode" class="login-input">
+                    <button class="login-btn">Login to Your Account <span class="arrow">→</span></button>
+                </div>
+    
+                <div class="divider">/</div>
+    
+                <!-- Social Login Buttons -->
+                <div class="social-login">
+                    <button class="social-btn google">
+                        <i class="google-icon">G</i> Sign in with Gmail Account
+                    </button>
+                    <button class="social-btn facebook" id="facebook-login">
+                        <i class="facebook-icon">f</i> Sign in with Facebook Account
+                    </button>
+                    <button class="social-btn apple">
+                        <i class="apple-icon"></i> Sign in with Apple Secure ID
+                    </button>
+                </div>
+            </div>
+    
+            <a href="#" class="forgot-passcode">Forgot Passcode?</a>
+            <!-- <p class="forgot-passcode">Forgot Passcode?</p> -->
+        </div>
+    </div>
+    <script src="account.js"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+</body>
+</html>

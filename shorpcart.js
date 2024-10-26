@@ -170,3 +170,21 @@ const countdown = setInterval(function() {
         document.getElementById("countdown").innerHTML = "Expired";
     }
 }, 1000);
+
+
+const popUpElements = document.querySelectorAll('.pop-up');
+
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+
+popUpElements.forEach(element => {
+    observer.observe(element);
+});
+

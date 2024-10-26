@@ -4,8 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopcart</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="assets/books.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/Shorpkart.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
       <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
@@ -29,7 +30,7 @@
                     <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>ShopKart</a>
                 </div>
                 <ul class="sidebar-nav-list ">
-                    <li class="sidebar-nav-item" style="font-size: 24px; color: red;"><box-icon name='x' onclick=hideSidebar()></box-icon></li>
+                    <li class="sidebar-nav-item"><box-icon name='x' size="36px" onclick=hideSidebar()></box-icon></li>
                     <li class="sidebar-nav-item"><a href="#Categories.html" class="nav-link">Categories <i class="fas fa-angle-down"></i></a></li>
                     <li class="sidebar-nav-item"><a href="#Deals" class="nav-link">Deals</a></li>
                     <li class="sidebar-nav-item"><a href="#What's-New" class="nav-link">What's New</a></li>
@@ -46,19 +47,26 @@
                     <div class="navlogo">
                         <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>ShopKart</a>
                     </div>
-                    <ul class="nav-list ">
-                        <li class="nav-item"><a href="#Categories.html" class="nav-link hideOnMobile">Categories <i class="fas fa-angle-down"></i></a></li>
+                    <ul class="nav-list hideOnMobile">
+                        <li class="nav-item nav-categories"><a href="#Categories.html" class="nav-link hideOnMobile ">Categories <i class="fas fa-angle-down"></i></a>
+                            <div class="reveal">
+                                <a href="#">Furniture</a>
+                                <a href="#">Hand Bag</a>
+                                <a href="#">Shoes</a>
+                                <a href="#">Combo Deals</a>
+                            </div></li>
                         <li class="nav-item"><a href="#Deals" class="nav-link hideOnMobile">Deals</a></li>
                         <li class="nav-item"><a href="#What's-New" class="nav-link hideOnMobile">What's New</a></li>
                         <li class="nav-item"><a href="#Delivery" class="nav-link hideOnMobile">Delivery</a></li>
                     </ul>
+                   
                 </div>
                   <div class="nav-right">
                       <form class="search-bar hideOnMobile">
                         <input type="text" name="Search" placeholder="Search...">
                      </form>
                      <div class="account">
-                        <a href="account.html" target="_blank"><i class="fas fa-user"></i> Account</a>
+                        <a href="account.html"><i class="fas fa-user"></i> Account</a>
                      </div>
                      <div class="cart">
                         <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
@@ -67,7 +75,7 @@
                           <span>0</span>  
                      </div>
                   </div>
-                  <box-icon name='menu' class="hamburger-menu" onclick=showSidebar()></box-icon>
+                  <box-icon name='menu' class="hamburger-menu bx-lg" size="36px" onclick=showSidebar()></box-icon>
             </nav>
         </header>
         
@@ -145,11 +153,11 @@
                     <h2 id="countdown">Time Left: 3d : 12h : 43m : 21s</h2>
                 </div>
                 <a href="#">
-                    <h2>SEE ALL <i class="fas fa-angle-right"></i></h2>
+                    <h2><span>SEE ALL</span> <i class="fas fa-angle-right"></i></h2>
                 </a>
             </div>
             <div class="listProduct">
-                <div class="item">
+                <div class="item pop-up">
                     <img src="assets/airfryer.jpg" alt="">
                     <h2>NAME PRODUCT</h2>
                     <div class="price">$200</div>
@@ -185,6 +193,49 @@
             <button class="checkOut">CHECK  OUT</button>
         </div>
     </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-navlogo">
+                    <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>ShopKart</a>
+                </div>
+                <p style="color: #A9A9A9;">Your one-stop shop for everything you need! Discover top deals on fashion, electronics, and home essentials—all with fast shipping and easy shopping. Explore now!</p>
+                <div class="footer-contact">
+                    <div class="footer-contact-detail">
+                        <i class='bx bx-phone bx-flashing-hover' ></i><a href="#">+234 902 874 1416</a>
+                    </div>
+                    <div class="footer-contact-detail">
+                        <i class='bx bx-current-location bx-flashing-hover'></i><p>24 Tpain County, Sapanation</p>
+                    </div>
+                    <div class="footer-contact-detail">
+                        <i class='bx bx-mail-send bx-flashing-hover' ></i><a href="#">support@shorpkart.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="quick-links">
+                    <p style="color: white; font-weight: 600;">Quick Links</p>
+                    <a href="#">About Us</a>
+                    <a href="#">For Business</a>
+                    <a href="#">Physical Stores</a>
+                </div>
+                <div class="legal">
+                    <p style="color: white; font-weight: 600;">Legal</p>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Patner Terms Of Service</a>
+                    <a href="#">Client Terms Of Service</a>
+                    <a href="#">Help Center</a>
+                </div>
+                <div class="social">
+                    <p style="color: white; font-weight: 600;">We are social</p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script>
         function showSidebar() {
             const sidebar = document.querySelector('.sidebar');

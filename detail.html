@@ -3,17 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  
+    <title>PRODUCT DETAIL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/Shorpkart.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      
 </head>
 <body>
-    <div id="app"></div>
-    <div id="temporaryContent">
-        <div class="title">PRODUCT DETAIL</div>
+    <header>
+        <div class="topbar">
+                <div class="call-btn">
+                    <a href="tel:+2349028741416" class="btn-contact"><i class="fas fa-phone"></i>+234 902 874 1416</a>
+                </div>
+                <div class="deal">
+                    <p>Get 50% Off on Selected Items  |  Shop Now</p>
+                </div>
+                <div class="topbar-control">
+                    <p>Eng <i class="fas fa-angle-down"></i></p>
+                    <p>Location <i class="fas fa-angle-down"></i></p>
+                </div>
+        </div>
+        <!-- sidebar -->
+          <div class="sidebar">
+            <div class="sidebar-navlogo">
+                <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>ShopKart</a>
+            </div>
+            <ul class="sidebar-nav-list ">
+                <li class="sidebar-nav-item"><box-icon name='x' size="36px" onclick=hideSidebar()></box-icon></li>
+                <li class="sidebar-nav-item"><a href="#Categories.html" class="nav-link">Categories <i class="fas fa-angle-down"></i></a></li>
+                <li class="sidebar-nav-item"><a href="#Deals" class="nav-link">Deals</a></li>
+                <li class="sidebar-nav-item"><a href="#What's-New" class="nav-link">What's New</a></li>
+                <li class="sidebar-nav-item"><a href="#Delivery" class="nav-link">Delivery</a></li>
+            </ul>
+            <form class="sidebar-search-bar">
+                <input type="text" name="Search" placeholder="Search...">
+            </form>
+          </div>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+
+                <div class="navlogo">
+                    <a href="index.html" class="nav-logo"><i class="fas fa-shopping-cart"></i>ShopKart</a>
+                </div>
+                <ul class="nav-list hideOnMobile">
+                    <li class="nav-item nav-categories"><a href="#Categories.html" class="nav-link hideOnMobile ">Categories <i class="fas fa-angle-down"></i></a>
+                        <div class="reveal">
+                            <a href="#">Furniture</a>
+                            <a href="#">Hand Bag</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Combo Deals</a>
+                        </div></li>
+                    <li class="nav-item"><a href="#Deals" class="nav-link hideOnMobile">Deals</a></li>
+                    <li class="nav-item"><a href="#What's-New" class="nav-link hideOnMobile">What's New</a></li>
+                    <li class="nav-item"><a href="#Delivery" class="nav-link hideOnMobile">Delivery</a></li>
+                </ul>
+               
+            </div>
+              <div class="nav-right">
+                  <form class="search-bar hideOnMobile">
+                    <input type="text" name="Search" placeholder="Search...">
+                 </form>
+                 <div class="account">
+                    <a href="account.html"><i class="fas fa-user"></i> Account</a>
+                 </div>
+                 <div class="cart">
+                    <svg  aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                      </svg>
+                      <span>0</span>  
+                 </div>
+              </div>
+              <box-icon name='menu' class="hamburger-menu bx-lg" size="36px" onclick=showSidebar()></box-icon>
+        </nav>
+    </header>
+    <div class="container">
         <div class="detail">
             <div class="image">
-                <img src="">
+                <img src="" alt="Product Image">
             </div>
             <div class="content">
                 <h1 class="name"></h1>
@@ -22,8 +91,9 @@
                     <button>Check Out</button>
                     <button class="addCart">Add To Cart 
                         <span>
-                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" 
+                                    stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
                             </svg>
                         </span>
                     </button>
@@ -31,11 +101,67 @@
                 <div class="description"></div>
             </div>
         </div>
-
-        <div class="title">Similar product</div>
+        <div class="title">SIMILAR PRODUCTS</div>
         <div class="listProduct"></div>
     </div>
 
-    <script src="detail.js" type="module"></script>
+    <script>
+        // Initialize product list
+        let products = [];
+
+        // Fetch data from products.json
+        fetch('products.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load product data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                products = data;
+                showDetail();  // Ensure product data is loaded before showing details
+            })
+            .catch(error => console.error('Error fetching product data:', error));
+
+        // Display product details
+        function showDetail() {
+            const productId = new URLSearchParams(window.location.search).get('id');
+            const product = products.find(p => p.id == productId);
+
+            // if (!product) {
+            //     console.warn(`Product with ID ${productId} not found. Redirecting to home.`);
+            //     window.location.href = "/";  // Redirect to home if product not found
+            //     return;
+            // }
+
+            // Populate product details
+            document.querySelector('.detail .image img').src = product.image;
+            document.querySelector('.detail .name').innerText = product.name;
+            document.querySelector('.detail .price').innerText = `$${product.price}`;
+            document.querySelector('.detail .description').innerText = product.description;
+
+            showSimilarProducts(productId);
+        }
+
+        // Display similar products
+        function showSimilarProducts(excludeId) {
+            const listProduct = document.querySelector('.listProduct');
+            listProduct.innerHTML = '';  // Clear any existing products
+
+            products
+                .filter(p => p.id != excludeId)  // Exclude the current product
+                .forEach(product => {
+                    const newProduct = document.createElement('a');
+                    newProduct.href = `/detail.html?id=${product.id}`;
+                    newProduct.classList.add('item');
+                    newProduct.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h2>${product.name}</h2>
+                        <div class="price">$${product.price}</div>
+                    `;
+                    listProduct.appendChild(newProduct);
+                });
+        }
+    </script>
 </body>
 </html>
